@@ -1,0 +1,9 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="smax.batch30.A2.controller.ProductList"
+		 xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Product List">
+	        <content>
+	           <Button text = "Go to Product Details" press="gotoProdDtl"/>
+	        </content>
+	     </Page>
+</core:View>
