@@ -1,8 +1,11 @@
 sap.ui.controller("smax.batch30.A2.controller.ProductList", {
 
-	gotoProdDtl : function(){
-		// get Router
-		this.getOwnerComponent().getRouter().navTo("details");
+	
+	
+	onItemSelection : function(oEvent){
+		
+		var productId = oEvent.getSource().getTitle();
+		this.getOwnerComponent().getRouter().navTo("details", { pid : productId});
 	}
 
 });

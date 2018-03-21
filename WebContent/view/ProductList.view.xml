@@ -3,7 +3,12 @@
 		 xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Product List">
 	        <content>
-	           <Button text = "Go to Product Details" press="gotoProdDtl"/>
+	           <List items="{/ProductSet}" >
+	             <items>
+	                <StandardListItem title="{ProductID}" 
+	                type="Active" press="onItemSelection"/>
+	             </items>
+	           </List>
 	        </content>
 	     </Page>
 </core:View>
