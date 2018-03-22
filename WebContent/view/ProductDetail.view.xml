@@ -3,7 +3,12 @@
 		xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Product Detail">
 		<content>
-	        <Button text="Back" press="goBack"/>
+		 <VBox>
+            <Text text="{ProductID}"/>	
+            <Text text="{Name}"/>	
+            <Text text="{Category}"/>	
+            <Text text="{Description}"/>	
+         </VBox>   
 		</content>
 	</Page>
 </core:View>

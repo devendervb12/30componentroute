@@ -7,11 +7,11 @@ sap.ui.controller("smax.batch30.A2.controller.ProductDetail", {
 		oRouter.getRoute("details").attachPatternMatched(function(oEvent){
 			debugger;
 			var prodId = oEvent.getParameters().arguments.pid;
-		})
-	},
-	
-	goBack : function(){
-		this.getOwnerComponent().getRouter().navTo("homePage");
+			//this.getView().bindElement("/ProductSet('HT-1000')"); // all product HT-1000 will reach the view
+			this.getView().bindElement("/ProductSet('"+prodId+"')"); // all product HT-1000 will reach the view
+//			this -> to controller
+		//	this -> Router
+		}, this);
+		// we are specifying that this is a event listener
 	}
-
 });
